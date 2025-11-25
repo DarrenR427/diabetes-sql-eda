@@ -3,6 +3,8 @@
 This project analyzes over 100,000+ hospital encounters from diabetic patients across 130 U.S. hospitals.
 Using PostgreSQL, I designed a full database schema, engineered new features, and wrote analytical SQL queries to explore readmissions, length of stay, diagnoses, and medication usage.
 
+---
+
 **This project demonstrates skills used in:**
 
 -Healthcare analytics
@@ -16,6 +18,8 @@ Using PostgreSQL, I designed a full database schema, engineered new features, an
 -Feature engineering with SQL views
 
 -Query optimization and reporting
+
+---
 
 **Dataset Overview:**
 
@@ -39,6 +43,8 @@ Using PostgreSQL, I designed a full database schema, engineered new features, an
 
 -Readmission status (NO, >30 days, <30 days)
 
+---
+
 **The SQL schema for this project uses a single table called diabetic_data, created with:**
 
 -Appropriate numeric, text, and small-int datatypes
@@ -51,6 +57,8 @@ Using PostgreSQL, I designed a full database schema, engineered new features, an
 schema.sql
 
 Feature Engineering (SQL View)
+
+---
 
 **I created a new SQL view called diabetic_data_enriched to simplify analysis and add analytical features.**
 
@@ -68,6 +76,8 @@ Feature Engineering (SQL View)
 
 Full view available in:
 view_enriched.sql
+
+---
 
 **Core Analysis Questions:**
 
@@ -129,6 +139,8 @@ Uses average time_in_hospital by age group.
 
 RANK() OVER (PARTITION BY age_group ORDER BY time_in_hospital DESC)
 
+---
+
 **Key Insights:**
 
 -Patients aged 70–79 show the highest estimated readmission rates.
@@ -138,6 +150,8 @@ RANK() OVER (PARTITION BY age_group ORDER BY time_in_hospital DESC)
 -Certain discharge types are associated with higher readmission risk.
 
 -“High-utilization” patients (5+ encounters) often present chronic complications.
+
+---
 
 **Skills Demonstrated:**
 
@@ -153,6 +167,8 @@ RANK() OVER (PARTITION BY age_group ORDER BY time_in_hospital DESC)
 
 -Healthcare analytics
 
+---
+
 **Tools Used:**
 
 -PostgreSQL
@@ -162,6 +178,8 @@ RANK() OVER (PARTITION BY age_group ORDER BY time_in_hospital DESC)
 -SQL (CTEs, Views, Window Functions)
 
 -GitHub
+
+---
 
 **How to Reproduce:**
 
